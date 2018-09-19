@@ -23,11 +23,12 @@ namespace ProjetoModulo7OOB
         {
             
             meuCarro = new Carro();
-            meuCarro.cor = "Vermelho";
-            meuCarro.modelo = "Ferrari";
-            meuCarro.qtdPortas = 2;
-            meuCarro.qtdRodas = 4;
-            meuCarro.velocidadeMaxima = 160;
+            meuCarro.setCor ("Vermelho");
+            meuCarro.setModelo ("Ferrari");
+            meuCarro.setQtdPortas (2);
+            meuCarro.setQtdRodas (4);
+            meuCarro.setVelocidadeMaxima (160);
+            
         }
 
         private void btnAcelerar_Click(object sender, EventArgs e)
