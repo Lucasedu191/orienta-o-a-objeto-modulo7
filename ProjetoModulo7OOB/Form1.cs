@@ -34,9 +34,6 @@ namespace ProjetoModulo7OOB
             MessageBox.Show (ConverterParaString(minhaMoto));
             //MessageBox.Show(minhaMoto.Ligar());
 
-            Veiculo meuVeiculo = new Veiculo();
-            meuVeiculo.cor = "Azul";
-            MessageBox.Show( ConverterParaString(meuVeiculo));
         }
 
         public string ConverterParaString(Veiculo veiculo)

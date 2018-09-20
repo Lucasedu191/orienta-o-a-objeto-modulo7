@@ -8,6 +8,11 @@ namespace ProjetoModulo7OOB
 {
     public class Motocicleta : Veiculo
     {
+        public override string Acelerar()
+        {
+            throw new NotImplementedException();
+        }
+
         public string Ligar()
         {
             return "Moto Ligada";

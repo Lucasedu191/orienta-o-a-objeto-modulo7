@@ -5,9 +5,10 @@ namespace ProjetoModulo7OOB
 
     public class Carro : Veiculo
     {
-        public string Acelerar()
+
+        public override string Acelerar()
         {
-            return "Carro acelerou";
+            throw new NotImplementedException();
         }
     }
 }

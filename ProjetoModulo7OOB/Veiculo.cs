@@ -8,7 +8,7 @@ namespace ProjetoModulo7OOB
 {
 
 
-    public class Veiculo
+    public abstract class Veiculo
     {
 
         public String cor { get; set; }
@@ -18,25 +18,13 @@ namespace ProjetoModulo7OOB
         public int qtdPortas { get; set; }
 
 
-        public string Ligar()
-        {
-            return "Veiculo Ligado";
-        }
+        public abstract string Ligar();
 
-        public string Ligar(int velocidade)
-        {
-            return "Veiculo Ligado";
-        }
+        public abstract string Ligar(int velocidade);
 
-        public string Ligar(double vel)
-        {
-            return "Veiculo Ligado";
-        }
+        public abstract string Ligar(double vel);
 
-
-        public string Acelerar()
-        {
-            return "Veiculo acelerou";
-        }
+        public abstract string Acelerar();
+        
     }
 }
