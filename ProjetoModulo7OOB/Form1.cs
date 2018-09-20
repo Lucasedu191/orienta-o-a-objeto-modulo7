@@ -22,8 +22,11 @@ namespace ProjetoModulo7OOB
         private void btnCriar_Click(object sender, EventArgs e)
         {
             
-            meuCarro = new Carro("Vermelho", "Ferrari", 2, 4, 160);
-
+            meuCarro = new Carro();
+            meuCarro.cor = "Azul";
+            meuCarro.qtdPortas = 2;
+            MessageBox.Show(meuCarro.cor);
+            
         }
 
         private void btnAcelerar_Click(object sender, EventArgs e)
@@ -33,7 +36,7 @@ namespace ProjetoModulo7OOB
 
         private void btnLigar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(meuCarro.Ligar());
+            MessageBox.Show(meuCarro.Ligar(10));
         }
     }
 }
