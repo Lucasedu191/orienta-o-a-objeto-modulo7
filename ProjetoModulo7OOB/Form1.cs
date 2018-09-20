@@ -25,15 +25,40 @@ namespace ProjetoModulo7OOB
             meuCarro = new Carro();
             meuCarro.cor = "Azul";
             meuCarro.qtdPortas = 2;
-            MessageBox.Show(meuCarro.cor);
+            MessageBox.Show ( ConverterParaString(meuCarro));
+            //MessageBox.Show(meuCarro.cor);
 
             Motocicleta minhaMoto = new Motocicleta();
             minhaMoto.cor = "Vermelho";
             minhaMoto.Ligar();
-            MessageBox.Show(minhaMoto.cor);
+            MessageBox.Show (ConverterParaString(minhaMoto));
+            //MessageBox.Show(minhaMoto.Ligar());
+
+            Veiculo meuVeiculo = new Veiculo();
+            meuVeiculo.cor = "Azul";
+            MessageBox.Show( ConverterParaString(meuVeiculo));
         }
 
-        private void btnAcelerar_Click(object sender, EventArgs e)
+        public string ConverterParaString(Veiculo veiculo)
+        {
+            if (typeof (Veiculo) == veiculo.GetType())
+            {
+                return " Veiculo Cor: " + veiculo.cor;
+            }
+            else if(typeof(Carro) == veiculo.GetType())
+            {
+                return "Carro Cor: " + veiculo.cor;
+            }
+            else if (typeof(Motocicleta) == veiculo.GetType())
+            {
+                return "Moto Cor: " + veiculo.cor;
+            }
+            return String.Empty;
+        }
+
+    
+
+    private void btnAcelerar_Click(object sender, EventArgs e)
         {
             MessageBox.Show(meuCarro.Acelerar());
         }
