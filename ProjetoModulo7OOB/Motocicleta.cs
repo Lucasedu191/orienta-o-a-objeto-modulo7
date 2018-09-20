@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoModulo7OOB
 {
-    public class Motocicleta : Veiculo
+    public class Motocicleta : IVeiculo
     {
         public override string Acelerar()
         {
