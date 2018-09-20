@@ -26,7 +26,11 @@ namespace ProjetoModulo7OOB
             meuCarro.cor = "Azul";
             meuCarro.qtdPortas = 2;
             MessageBox.Show(meuCarro.cor);
-            
+
+            Motocicleta minhaMoto = new Motocicleta();
+            minhaMoto.cor = "Vermelho";
+            minhaMoto.Ligar();
+            MessageBox.Show(minhaMoto.cor);
         }
 
         private void btnAcelerar_Click(object sender, EventArgs e)
