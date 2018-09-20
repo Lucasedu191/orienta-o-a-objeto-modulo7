@@ -22,13 +22,8 @@ namespace ProjetoModulo7OOB
         private void btnCriar_Click(object sender, EventArgs e)
         {
             
-            meuCarro = new Carro();
-            meuCarro.setCor ("Vermelho");
-            meuCarro.setModelo ("Ferrari");
-            meuCarro.setQtdPortas (2);
-            meuCarro.setQtdRodas (4);
-            meuCarro.setVelocidadeMaxima (160);
-            
+            meuCarro = new Carro("Vermelho", "Ferrari", 2, 4, 160);
+
         }
 
         private void btnAcelerar_Click(object sender, EventArgs e)

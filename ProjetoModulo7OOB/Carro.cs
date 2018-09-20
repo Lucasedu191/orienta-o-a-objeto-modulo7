@@ -4,6 +4,16 @@ namespace ProjetoModulo7OOB
 {
     public class Carro
     {
+        public Carro(String cor, String modelo, double velocidadeMaxima, int qtdRodas, int qtdPortas)
+        {
+            setCor(cor);
+            setModelo(modelo);
+            setVelocidadeMaxima(velocidadeMaxima);
+            setQtdRodas(qtdRodas);
+            setQtdPortas(qtdPortas);
+
+        }
+
         private String cor;
         private String modelo;
         private double velocidadeMaxima;
